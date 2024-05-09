@@ -1,0 +1,26 @@
+@mixin background-color($color){
+    @include color();
+    background-color: ($color);
+    color: ($color);
+}
+
+@mixin menu{
+    border-radius: 25px;
+    border-style: solid;
+    padding: 7px;
+    width: 140px;
+    margin: 10px;
+}
+
+@mixin btn-start{
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+

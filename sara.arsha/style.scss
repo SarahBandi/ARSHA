@@ -1,0 +1,186 @@
+@import "colors";
+@import "mixin";
+
+
+.header {
+    @include background-color($brand);
+}
+
+.header img {
+    height: 30px;
+}
+
+.section-bar {
+    @include background-color($navbar);
+    position: sticky;
+}
+
+.main h2 {
+    margin-left: 100px;
+    margin-top: 10px;
+    color: ($text-color);
+}
+
+.section-bar a {
+    @include color ($text-color);
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+.nav-item a:hover {
+    @include color ($pale-blue);
+}
+
+#menu {
+    @include menu ();
+    border-color: ($pale-blue);
+    @include background-color ($navbar);
+    color: ($text-color);
+}
+
+.navbar-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#btn-start {
+    @include btn-start ();
+    border-color: ($pale-blue);
+    @include background-color ($pale-blue);
+    @include color ($text-color);
+}
+
+#btn-watch {
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: none;
+    @include background-color ($navbar);
+    @include color ($text-color);
+
+}
+
+#btn-watch:hover {
+    @include color ($pale-blue);
+}
+
+.imgs {
+    @include background-color (#f5f6f8);
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgs img {
+    height: 60px;
+}
+
+.about h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fluid1 {
+    @include background-color ($navbar);
+    text-align: left;
+}
+
+
+.fluid2 {
+    @include background-color (#f3f5fa);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+.fluid3 {
+    @include background-color ($text-color);
+    padding: 30px;
+}
+
+.fluid3 col {
+    margin: 0;
+    padding: 0;
+}
+
+.col p {
+    text-align: justify;
+}
+
+.col h1 {
+    @include color ($text-color);
+}
+
+.col h4 {
+    @include color (#d3d2d2);
+}
+
+.center {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.row {
+    width: 100%;
+}
+
+.progress-bar{
+    background-color: #023b6d;
+}
+
+#btn-learn {
+    border-style: solid;
+    border-color: ($pale-blue);
+    @include color ($pale-blue);
+    @include background-color ($text-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 30px;
+}
+
+#btn-learn:hover {
+    @include color ($text-color);
+    @include background-color($pale-blue);
+}
+
+
+.img-fluid {
+    width: 50%;
+    height: 50%;
+}
+
+.service {
+    @include background-color (#f3f5fa);
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.card {
+    width: 18rem;
+}
+
+.icon{
+    padding-bottom: 6%;
+    color: #74C0FC;
+}
+
+.card-body {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
